@@ -44,7 +44,6 @@
   border-radius: 5px;
   padding: 11px 22px 11px 16px;
   color: #fff;
-  position: relative;
 }
 .headerTop .headerTopMain .TopMainDown .catalog p {
   margin: 0;
@@ -54,6 +53,10 @@
   width: 18px;
   background-color: #fff;
   margin-right: 5px;
+  display: block;
+}
+.headerTop .headerTopMain .TopMainDown .lines {
+  position: relative;
 }
 .headerTop .headerTopMain .TopMainDown .lines::before,
 .headerTop .headerTopMain .TopMainDown .lines::after {
@@ -64,8 +67,8 @@
   background-color: #fff;
 }
 .headerTop .headerTopMain .TopMainDown .lines::before {
-  top: 0;
+  top: 5px;
 }
-.headerTop .headerTopMain .TopMainDown .catalog::after {
-  bottom: 0;
+.headerTop .headerTopMain .TopMainDown .lines::after {
+  bottom: 5px;
 }

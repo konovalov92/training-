@@ -46,7 +46,7 @@
                 border-radius: 5px;
                 padding: 11px 22px 11px 16px;
                 color: #fff;
-                position: relative; 
+                // position: relative; 
                 p{
                     margin: 0;
                 }
@@ -55,7 +55,11 @@
                     width: 18px;
                     background-color: #fff;
                     margin-right: 5px;
+                    display: block;
                 }
+            }
+            .lines{
+                position: relative;
             }
             .lines::before, .lines::after{
                 content: "";
@@ -65,10 +69,10 @@
                 background-color: #fff;
             }
             .lines::before{
-                top: 0;
+                top: 5px;
             }
-            .catalog::after{
-                bottom: 0;
+            .lines::after{
+                bottom: 5px;
             }
         }
     }
