@@ -1,0 +1,71 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.section {
+  width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.headerTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.headerTop .headerTopLogo img {
+  max-width: 340px;
+}
+.headerTop .headerTopMain .TopMainUp {
+  display: flex;
+}
+.headerTop .headerTopMain .TopMainUp p {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0;
+  margin-right: 55px;
+}
+.headerTop .headerTopMain .TopMainUp .send {
+  width: 200px;
+  height: 40px;
+  border: 2px solid #3F69FF;
+  background-color: unset;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 400;
+}
+.headerTop .headerTopMain .TopMainDown {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+.headerTop .headerTopMain .TopMainDown .catalog {
+  display: flex;
+  align-items: center;
+  background-color: #3F69FF;
+  border-radius: 5px;
+  padding: 11px 22px 11px 16px;
+  color: #fff;
+  position: relative;
+}
+.headerTop .headerTopMain .TopMainDown .catalog p {
+  margin: 0;
+}
+.headerTop .headerTopMain .TopMainDown .catalog span {
+  height: 2px;
+  width: 18px;
+  background-color: #fff;
+  margin-right: 5px;
+}
+.headerTop .headerTopMain .TopMainDown .lines::before,
+.headerTop .headerTopMain .TopMainDown .lines::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 18px;
+  background-color: #fff;
+}
+.headerTop .headerTopMain .TopMainDown .lines::before {
+  top: 0;
+}
+.headerTop .headerTopMain .TopMainDown .catalog::after {
+  bottom: 0;
+}
