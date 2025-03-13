@@ -46,33 +46,45 @@
                 border-radius: 5px;
                 padding: 11px 22px 11px 16px;
                 color: #fff;
-                // position: relative; 
+                height: 20px;
                 p{
                     margin: 0;
+                    font-size: 14px;
+                    font-weight: 400;
                 }
                 span{
-                    height: 2px;
+                    height: 1.5px;
                     width: 18px;
                     background-color: #fff;
                     margin-right: 5px;
                     display: block;
                 }
+                .lines{
+                    position: relative;
+                }
+                .lines::before, .lines::after{
+                    content: "";
+                    position: absolute;
+                    height: 1.5px;
+                    width: 18px;
+                    background-color: #fff;
+                }
+                .lines::before{
+                    top: 5px;
+                }
+                .lines::after{
+                    bottom: 5px;
+                }
             }
-            .lines{
-                position: relative;
-            }
-            .lines::before, .lines::after{
-                content: "";
-                position: absolute;
-                height: 2px;
-                width: 18px;
-                background-color: #fff;
-            }
-            .lines::before{
-                top: 5px;
-            }
-            .lines::after{
-                bottom: 5px;
+            .search{
+                input{
+                    width: 380px;
+                    height: 40px;
+                }
+                button{
+                    width: 45px;
+                    height: 40px;
+                }
             }
         }
     }

@@ -44,31 +44,42 @@
   border-radius: 5px;
   padding: 11px 22px 11px 16px;
   color: #fff;
+  height: 20px;
 }
 .headerTop .headerTopMain .TopMainDown .catalog p {
   margin: 0;
+  font-size: 14px;
+  font-weight: 400;
 }
 .headerTop .headerTopMain .TopMainDown .catalog span {
-  height: 2px;
+  height: 1.5px;
   width: 18px;
   background-color: #fff;
   margin-right: 5px;
   display: block;
 }
-.headerTop .headerTopMain .TopMainDown .lines {
+.headerTop .headerTopMain .TopMainDown .catalog .lines {
   position: relative;
 }
-.headerTop .headerTopMain .TopMainDown .lines::before,
-.headerTop .headerTopMain .TopMainDown .lines::after {
+.headerTop .headerTopMain .TopMainDown .catalog .lines::before,
+.headerTop .headerTopMain .TopMainDown .catalog .lines::after {
   content: "";
   position: absolute;
-  height: 2px;
+  height: 1.5px;
   width: 18px;
   background-color: #fff;
 }
-.headerTop .headerTopMain .TopMainDown .lines::before {
+.headerTop .headerTopMain .TopMainDown .catalog .lines::before {
   top: 5px;
 }
-.headerTop .headerTopMain .TopMainDown .lines::after {
+.headerTop .headerTopMain .TopMainDown .catalog .lines::after {
   bottom: 5px;
+}
+.headerTop .headerTopMain .TopMainDown .search input {
+  width: 380px;
+  height: 40px;
+}
+.headerTop .headerTopMain .TopMainDown .search button {
+  width: 45px;
+  height: 40px;
 }
